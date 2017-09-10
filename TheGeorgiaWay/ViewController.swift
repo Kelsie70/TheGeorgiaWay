@@ -29,16 +29,32 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var connectButton: UIButton!
     
+    @IBAction func academicButtonAction(_ sender: Any) {
+    }
+    
+    @IBAction func careerDevButtonAction(_ sender: Any) {
+    }
+   
+    @IBAction func leadershipOutreachButtonAction(_ sender: Any) {
+    }
+    
+    @IBAction func alumniButtonAction(_ sender: Any) {
+    }
+    
+    @IBAction func communityOutreachButtonAction(_ sender: Any) {
+    }
+    
+    @IBAction func personalDevButtonAction(_ sender: Any) {
+    }
+    
+    @IBAction func blogButtonAction(_ sender: Any) {
+    }
+    
+    @IBAction func connectButtonAction(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        leadershipOutreachButton.titleLabel?.textAlignment = .center
-        
-        communityOutreachButton.titleLabel?.textAlignment = .center
-
-        careerDevButton.titleLabel?.textAlignment = .center
-    
-        personalDevButton.titleLabel?.textAlignment = .center
 
     }
 
