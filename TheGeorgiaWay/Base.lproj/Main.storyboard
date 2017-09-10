@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TheGeorgiaWay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIY-kF-BaA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzo-ZD-abh">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Md4-jh-Omr">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zZ-mO-jmc" userLabel="TopView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileBanner" translatesAutoresizingMaskIntoConstraints="NO" id="CFg-7A-5l8">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="CFg-7A-5l8" firstAttribute="leading" secondItem="6zZ-mO-jmc" secondAttribute="leading" id="2G9-K9-H2g"/>
+                                                            <constraint firstAttribute="bottom" secondItem="CFg-7A-5l8" secondAttribute="bottom" id="42u-Hz-eVx"/>
+                                                            <constraint firstAttribute="trailing" secondItem="CFg-7A-5l8" secondAttribute="trailing" id="ZF5-XQ-Ryg"/>
+                                                            <constraint firstItem="CFg-7A-5l8" firstAttribute="top" secondItem="6zZ-mO-jmc" secondAttribute="top" id="k1b-1Q-qH2"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OoZ-oX-7Y6" userLabel="StackView1">
+                                                        <rect key="frame" x="0.0" y="200" width="375" height="200"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VdK-pM-13H">
+                                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="200"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cw-R8-Vm2">
+                                                                        <rect key="frame" x="39" y="92" width="114" height="15"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                        <state key="normal" title="Academic">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="1" green="0.31400373817246097" blue="0.34074422066216803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ltp-Va-NMB">
+                                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="200"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Tgl-Q4-dDz">
+                                                                        <rect key="frame" x="31" y="40" width="120" height="120"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                        <state key="normal" title="Career Development">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="1" green="0.55248086893461701" blue="0.54264942322713594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Qky-tv-u8I" userLabel="StackView2">
+                                                        <rect key="frame" x="0.0" y="400" width="375" height="200"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAS-G4-Rxp">
+                                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="200"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t6y-yT-x9t">
+                                                                        <rect key="frame" x="36" y="40" width="120" height="120"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <state key="normal">
+                                                                            <attributedString key="attributedTitle">
+                                                                                <fragment content="Leadership Development">
+                                                                                    <attributes>
+                                                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                        <font key="NSFont" metaFont="system" size="20"/>
+                                                                                    </attributes>
+                                                                                </fragment>
+                                                                            </attributedString>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="0.30236527458456297" green="0.53250424408394559" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="scF-c5-D4t">
+                                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="200"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XoD-aT-4x2">
+                                                                        <rect key="frame" x="31" y="40" width="120" height="120"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                        <state key="normal" title="Alumni">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="0.63316776336401714" green="0.70359672171618381" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iMj-3b-4vg" userLabel="StackView3">
+                                                        <rect key="frame" x="0.0" y="600" width="375" height="200"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e32-5f-eyJ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="200"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="NZh-0J-S9R">
+                                                                        <rect key="frame" x="36" y="40" width="120" height="120"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                        <state key="normal" title="Community Outreach">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="0.95297643736779558" green="0.41144725928133363" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbM-b0-KBm">
+                                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="200"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dnD-Q2-1U9">
+                                                                        <rect key="frame" x="31" y="82" width="120" height="36"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                        <state key="normal" title="Personal Development">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="0.97065373184020087" green="0.63037073092560325" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BH2-p5-Vfo" userLabel="StackView4">
+                                                        <rect key="frame" x="0.0" y="800" width="375" height="200"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9m-da-UZC">
+                                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="200"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFn-P5-evD">
+                                                                        <rect key="frame" x="96" y="0.0" width="0.0" height="200"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                        <state key="normal" title="Blog">
+                                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="0.31856738489999997" green="1" blue="0.54493473439999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JI7-cf-7R1">
+                                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="200"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4la-LG-snm">
+                                                                        <rect key="frame" x="31" y="40" width="120" height="120"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                        <state key="normal" title="Connect">
+                                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="0.83123259457528809" green="1" blue="0.86418763062976578" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="OoZ-oX-7Y6" firstAttribute="top" secondItem="Md4-jh-Omr" secondAttribute="top" constant="200" id="A9s-41-2EF"/>
+                                                    <constraint firstItem="Qky-tv-u8I" firstAttribute="top" secondItem="Md4-jh-Omr" secondAttribute="top" constant="400" id="BVa-Zv-J5P"/>
+                                                    <constraint firstItem="BH2-p5-Vfo" firstAttribute="top" secondItem="Md4-jh-Omr" secondAttribute="top" constant="800" id="CfI-8V-Yy7"/>
+                                                    <constraint firstItem="Qky-tv-u8I" firstAttribute="centerY" secondItem="Md4-jh-Omr" secondAttribute="centerY" id="JZz-l8-kcr"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Md4-jh-Omr" firstAttribute="leading" secondItem="dzo-ZD-abh" secondAttribute="leading" id="5dW-ta-7Ex"/>
+                                            <constraint firstItem="Md4-jh-Omr" firstAttribute="top" secondItem="dzo-ZD-abh" secondAttribute="top" id="Vgh-wz-HYq"/>
+                                            <constraint firstAttribute="trailing" secondItem="Md4-jh-Omr" secondAttribute="trailing" id="aZn-hj-3L7"/>
+                                            <constraint firstAttribute="bottom" secondItem="Md4-jh-Omr" secondAttribute="bottom" id="hFZ-ng-tps"/>
+                                            <constraint firstAttribute="height" constant="1000" id="iwI-yt-nfD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dzo-ZD-abh" firstAttribute="centerX" secondItem="uIY-kF-BaA" secondAttribute="centerX" id="0Me-gM-iMT"/>
+                                    <constraint firstItem="dzo-ZD-abh" firstAttribute="leading" secondItem="uIY-kF-BaA" secondAttribute="leading" id="Har-JZ-dgS"/>
+                                    <constraint firstItem="dzo-ZD-abh" firstAttribute="width" secondItem="uIY-kF-BaA" secondAttribute="width" id="VQB-wO-O9V"/>
+                                    <constraint firstAttribute="bottom" secondItem="dzo-ZD-abh" secondAttribute="bottom" id="bWI-vB-n3Y"/>
+                                    <constraint firstItem="dzo-ZD-abh" firstAttribute="top" secondItem="uIY-kF-BaA" secondAttribute="top" id="jas-3G-C8Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="dzo-ZD-abh" secondAttribute="trailing" id="znR-ho-fvL"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="uIY-kF-BaA" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="6V8-G3-hN8"/>
+                            <constraint firstItem="uIY-kF-BaA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IkT-zV-TtY"/>
+                            <constraint firstItem="uIY-kF-BaA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QUR-YB-itq"/>
+                            <constraint firstAttribute="trailing" secondItem="uIY-kF-BaA" secondAttribute="trailing" id="ijg-Zl-sNm"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="academicButton" destination="8Cw-R8-Vm2" id="hlJ-L1-APZ"/>
+                        <outlet property="alumniButton" destination="XoD-aT-4x2" id="cSN-TZ-VLi"/>
+                        <outlet property="blogButton" destination="WFn-P5-evD" id="7gE-mU-qyo"/>
+                        <outlet property="careerDevButton" destination="Tgl-Q4-dDz" id="dfv-p8-T4u"/>
+                        <outlet property="communityOutreachButton" destination="NZh-0J-S9R" id="j92-yH-hAJ"/>
+                        <outlet property="connectButton" destination="4la-LG-snm" id="0ef-nt-HwA"/>
+                        <outlet property="leadershipOutreachButton" destination="t6y-yT-x9t" id="h5K-g6-uJ4"/>
+                        <outlet property="mainScrollView" destination="uIY-kF-BaA" id="a8u-e0-hC5"/>
+                        <outlet property="personalDevButton" destination="dnD-Q2-1U9" id="b5a-VR-7FS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="42.728635682158924"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ProfileBanner" width="1600" height="350"/>
+    </resources>
+</document>
