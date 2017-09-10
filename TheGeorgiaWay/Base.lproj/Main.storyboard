@@ -157,7 +157,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="187.5" height="200"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFn-P5-evD">
-                                                                        <rect key="frame" x="96" y="0.0" width="0.0" height="200"/>
+                                                                        <rect key="frame" x="31" y="40" width="120" height="120"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                         <state key="normal" title="Blog">
