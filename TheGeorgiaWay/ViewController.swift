@@ -37,50 +37,50 @@ class ViewController: UIViewController {
     @IBAction func academicButtonAction(_ sender: Any) {
         let vc = showWebViewViewController()
         vc.url = "http://thegeorgiaway.com/academics/"
-        present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
 
     }
     
     @IBAction func careerDevButtonAction(_ sender: Any) {
         let vc = showWebViewViewController()
         vc.url = "http://thegeorgiaway.com/career-development/"
-        present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
    
     @IBAction func leadershipOutreachButtonAction(_ sender: Any) {
         let vc = showWebViewViewController()
         vc.url = "http://thegeorgiaway.com/leadership/"
-        present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func alumniButtonAction(_ sender: Any) {
         let vc = showWebViewViewController()
         vc.url = "http://thegeorgiaway.com/career-development/former-student-athletes/"
-        present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func communityOutreachButtonAction(_ sender: Any) {
         let vc = showWebViewViewController()
         vc.url = "http://thegeorgiaway.com/community-outreach/"
-        present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func personalDevButtonAction(_ sender: Any) {
         let vc = showWebViewViewController()
         vc.url = "http://thegeorgiaway.com/events/"
-        present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func blogButtonAction(_ sender: Any) {
         let vc = showWebViewViewController()
         vc.url = "http://thegeorgiaway.com/news/"
-        present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func connectButtonAction(_ sender: Any) {
         let vc = showWebViewViewController()
         vc.url = "http://thegeorgiaway.com/trending-wall/"
-        present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     override func viewDidLoad() {
