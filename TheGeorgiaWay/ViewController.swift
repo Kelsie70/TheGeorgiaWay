@@ -29,28 +29,58 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var connectButton: UIButton!
     
+    func showWebViewViewController() -> WebViewViewController {
+        let storyboard = UIStoryboard(name: "WebView", bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: "WebViewViewController") as! WebViewViewController
+    }
+    
     @IBAction func academicButtonAction(_ sender: Any) {
+        let vc = showWebViewViewController()
+        vc.url = "http://thegeorgiaway.com/academics/"
+        present(vc, animated: true, completion: nil)
+
     }
     
     @IBAction func careerDevButtonAction(_ sender: Any) {
+        let vc = showWebViewViewController()
+        vc.url = "http://thegeorgiaway.com/career-development/"
+        present(vc, animated: true, completion: nil)
     }
    
     @IBAction func leadershipOutreachButtonAction(_ sender: Any) {
+        let vc = showWebViewViewController()
+        vc.url = "http://thegeorgiaway.com/leadership/"
+        present(vc, animated: true, completion: nil)
     }
     
     @IBAction func alumniButtonAction(_ sender: Any) {
+        let vc = showWebViewViewController()
+        vc.url = "http://thegeorgiaway.com/career-development/former-student-athletes/"
+        present(vc, animated: true, completion: nil)
     }
     
     @IBAction func communityOutreachButtonAction(_ sender: Any) {
+        let vc = showWebViewViewController()
+        vc.url = "http://thegeorgiaway.com/community-outreach/"
+        present(vc, animated: true, completion: nil)
     }
     
     @IBAction func personalDevButtonAction(_ sender: Any) {
+        let vc = showWebViewViewController()
+        vc.url = "http://thegeorgiaway.com/events/"
+        present(vc, animated: true, completion: nil)
     }
     
     @IBAction func blogButtonAction(_ sender: Any) {
+        let vc = showWebViewViewController()
+        vc.url = "http://thegeorgiaway.com/news/"
+        present(vc, animated: true, completion: nil)
     }
     
     @IBAction func connectButtonAction(_ sender: Any) {
+        let vc = showWebViewViewController()
+        vc.url = "http://thegeorgiaway.com/trending-wall/"
+        present(vc, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
