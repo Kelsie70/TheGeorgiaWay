@@ -314,7 +314,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.32790236398963735" green="0.32790236398963735" blue="0.32790236398963735" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="uIY-kF-BaA" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="6V8-G3-hN8"/>
                             <constraint firstItem="uIY-kF-BaA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IkT-zV-TtY"/>

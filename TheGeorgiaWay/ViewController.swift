@@ -107,8 +107,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
-    
     override func viewWillAppear(_ animated: Bool) {
         bg1.alpha = 1.0
         bg2.alpha = 1.0
@@ -118,6 +118,7 @@ class ViewController: UIViewController {
         bg6.alpha = 1.0
         bg7.alpha = 1.0
         bg8.alpha = 1.0
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
     override func didReceiveMemoryWarning() {
