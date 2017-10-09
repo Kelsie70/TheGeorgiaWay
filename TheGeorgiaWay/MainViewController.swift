@@ -57,7 +57,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         if item.tag == 1 {
-            print("Tag one")
+            let vc = showWebViewViewController()
+            vc.url = "http://student-svcs.sports.uga.edu/current-student-athletes/opportunity-fund-request/"
+            self.navigationController?.pushViewController(vc, animated: true)
         } else if item.tag == 2 {
             print("Tag two")
         } else if item.tag == 3 {
@@ -66,7 +68,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             let vc = showCommServiceViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         } else if item.tag == 5 {
-            print("Tag five")
+            let vc = showWebViewViewController()
+            vc.url = "https://network.thegeorgiaway.com/"
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 

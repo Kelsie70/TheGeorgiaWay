@@ -94,7 +94,7 @@
                                     <tabBarItem tag="1" title="Opportunity Form" image="personalcircleiconsmall" id="6G0-oQ-sSI" userLabel="Opportunity Form"/>
                                     <tabBarItem tag="2" title="eLC" image="careerdevcircleiconsmall" id="fgo-bg-gE7"/>
                                     <tabBarItem tag="3" systemItem="more" id="1wi-mg-QT8"/>
-                                    <tabBarItem tag="4" title="Comm Service Hours" image="connectcircleiconsmall" id="5I9-Gp-P7q" userLabel="Comm Service Hours"/>
+                                    <tabBarItem tag="4" title="Service Hours" image="connectcircleiconsmall" id="5I9-Gp-P7q" userLabel="Comm Service Hours"/>
                                     <tabBarItem tag="5" title="CampusTap" image="blogcircleiconsmall" id="4kb-sp-iXa"/>
                                 </items>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
