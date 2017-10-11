@@ -8,28 +8,63 @@
 
 import UIKit
 
-class LeaderboardViewController: UIViewController {
+class LeaderboardTableViewCell : UITableViewCell {
+    
+    @IBOutlet weak var sportName: UILabel!
+    
+    @IBOutlet weak var points: UILabel!
+    
+}
 
+class LeaderboardViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
+    
+    var sports = ["Track & Field", "Swim", "Football", "Baseball", "Equestrian", "Golf", "Basketball", "Soccer", "Tennis", "Volleyball"]
+    
+    var points = ["361", "256", "241", "197", "165", "154", "122", "97", "87", "58"]
+
+    @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var tableViewCell: UITableViewCell!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        tableView.dataSource = self
+        tableView.delegate = self
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return sports.count // your number of cell here
     }
-    */
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70.0; //Choose your custom row height
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let sport = sports[indexPath.row]
+        let point = points[indexPath.row]
+        
+        // Instantiate a cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "leaderboardCell", for: indexPath) as! LeaderboardTableViewCell
+        
+        // Adding the right informations
+        
+        cell.sportName?.text = sport
+        cell.points?.text = point
+        
+        // Returning the cell
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("selected cell " + indexPath.row.description)
+    }
 
+
+    
 }

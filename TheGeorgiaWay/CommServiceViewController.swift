@@ -10,16 +10,22 @@ import UIKit
 
 class CommServiceViewController: UIViewController {
 
+    @IBOutlet weak var submit: UIBarButtonItem!
+    
+    @IBAction func submitAction(_ sender: Any) {
+        let vc = showLeaderboardViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func showLeaderboardViewController() -> LeaderboardViewController {
+        let storyboard = UIStoryboard(name: "Leaderboard", bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: "LeaderboardViewController") as! LeaderboardViewController
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
 }

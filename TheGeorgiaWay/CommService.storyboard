@@ -133,7 +133,11 @@
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Hlu-ZP-HiB"/>
-                                    <barButtonItem title="Submit Community Service Hours" id="E6q-Zv-JnQ"/>
+                                    <barButtonItem title="Submit Community Service Hours" id="E6q-Zv-JnQ">
+                                        <connections>
+                                            <action selector="submitAction:" destination="OW0-a8-y3M" id="IhB-Ni-vM0"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="XAf-2M-XKo"/>
                                 </items>
                             </toolbar>
@@ -182,6 +186,9 @@
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="submit" destination="E6q-Zv-JnQ" id="vKY-qr-OCR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5o-ho-Otw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
