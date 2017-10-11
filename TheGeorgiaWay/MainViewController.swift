@@ -22,6 +22,18 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var titles = ["Dawgs Beat Tennessee 41-0", "Gym Dawgs Take 1st Again", "Uga Enjoying a Saturday in Athens", "Swim Records at Last Meet"]
     
+    @IBOutlet weak var academicsButton: UIButton!
+    
+    @IBOutlet weak var personalDevButton: UIButton!
+    
+    @IBOutlet weak var alumniButton: UIButton!
+    
+    @IBOutlet weak var careerDevButton: UIButton!
+    
+    @IBOutlet weak var commOutreachButton: UIButton!
+    
+    @IBOutlet weak var leadershipDevButton: UIButton!
+    
     @IBOutlet weak var tabBar: UITabBar!
     
     @IBOutlet weak var tabOption1: UITabBarItem!
@@ -36,6 +48,50 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var tableView: UITableView!
     
+    var isButtonsShown = false
+    
+    @IBAction func personalDevAction(_ sender: Any) {
+        let vc = showWebViewViewController()
+        vc.url = "http://thegeorgiaway.com/events/"
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func leadershipDevAction(_ sender: Any) {
+        let vc = showWebViewViewController()
+        vc.url = "http://thegeorgiaway.com/leadership/"
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    @IBAction func commOutreachAction(_ sender: Any) {
+        let vc = showWebViewViewController()
+        vc.url = "http://thegeorgiaway.com/community-outreach/"
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    @IBAction func careerDevAction(_ sender: Any) {
+        let vc = showWebViewViewController()
+        vc.url = "http://thegeorgiaway.com/career-development/"
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    @IBAction func alumniAction(_ sender: Any) {
+        let vc = showWebViewViewController()
+        vc.url = "http://thegeorgiaway.com/career-development/former-student-athletes/"
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    @IBAction func academicsAction(_ sender: Any) {
+        let vc = showWebViewViewController()
+        vc.url = "http://thegeorgiaway.com/academics/"
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    
     func showWebViewViewController() -> WebViewViewController {
         let storyboard = UIStoryboard(name: "WebView", bundle: nil)
         return storyboard.instantiateViewController(withIdentifier: "WebViewViewController") as! WebViewViewController
@@ -46,6 +102,25 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         return storyboard.instantiateViewController(withIdentifier: "CommServiceViewController") as! CommServiceViewController
     }
     
+    func showMoreButtons() {
+        academicsButton.isHidden = false;
+        personalDevButton.isHidden = false;
+        alumniButton.isHidden = false;
+        careerDevButton.isHidden = false;
+        commOutreachButton.isHidden = false;
+        leadershipDevButton.isHidden = false;
+    
+    }
+
+    func hideMoreButtons() {
+        academicsButton.isHidden = true;
+        personalDevButton.isHidden = true;
+        alumniButton.isHidden = true;
+        careerDevButton.isHidden = true;
+        commOutreachButton.isHidden = true;
+        leadershipDevButton.isHidden = true;
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,6 +128,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tabBar.delegate = self
         
+        hideMoreButtons()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        hideMoreButtons()
     }
     
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
@@ -61,9 +142,17 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             vc.url = "http://student-svcs.sports.uga.edu/current-student-athletes/opportunity-fund-request/"
             self.navigationController?.pushViewController(vc, animated: true)
         } else if item.tag == 2 {
-            print("Tag two")
+            let vc = showWebViewViewController()
+            vc.url = "http://calendar.uga.edu/home/category/service-volunteer-opportunities/"
+            self.navigationController?.pushViewController(vc, animated: true)
         } else if item.tag == 3 {
-            print("Tag three")
+            if isButtonsShown == false {
+                showMoreButtons()
+                isButtonsShown = true
+            } else {
+                hideMoreButtons()
+                isButtonsShown = false
+            }
         } else if item.tag == 4 {
             let vc = showCommServiceViewController()
             self.navigationController?.pushViewController(vc, animated: true)

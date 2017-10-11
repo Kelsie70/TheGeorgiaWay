@@ -17,6 +17,8 @@
 		78C264851F869E290017EC22 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C264841F869E290017EC22 /* MainViewController.swift */; };
 		78C264871F8AF0C60017EC22 /* CommServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C264861F8AF0C50017EC22 /* CommServiceViewController.swift */; };
 		78C264891F8AF0F00017EC22 /* CommService.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C264881F8AF0F00017EC22 /* CommService.storyboard */; };
+		78C2648B1F8EA3EB0017EC22 /* Leaderboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C2648A1F8EA3EB0017EC22 /* Leaderboard.storyboard */; };
+		78C2648D1F8EA4050017EC22 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C2648C1F8EA4050017EC22 /* LeaderboardViewController.swift */; };
 		78FB945D1F5F38EA000E3DE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FB945C1F5F38EA000E3DE5 /* AppDelegate.swift */; };
 		78FB945F1F5F38EA000E3DE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FB945E1F5F38EA000E3DE5 /* ViewController.swift */; };
 		78FB94621F5F38EA000E3DE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FB94601F5F38EA000E3DE5 /* Main.storyboard */; };
@@ -54,6 +56,8 @@
 		78C264841F869E290017EC22 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		78C264861F8AF0C50017EC22 /* CommServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommServiceViewController.swift; sourceTree = "<group>"; };
 		78C264881F8AF0F00017EC22 /* CommService.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CommService.storyboard; sourceTree = "<group>"; };
+		78C2648A1F8EA3EB0017EC22 /* Leaderboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Leaderboard.storyboard; sourceTree = "<group>"; };
+		78C2648C1F8EA4050017EC22 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		78FB94591F5F38EA000E3DE5 /* TheGeorgiaWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGeorgiaWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FB945C1F5F38EA000E3DE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78FB945E1F5F38EA000E3DE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +145,8 @@
 				783BC4E91F66D54C008C40CC /* WebView.storyboard */,
 				78C264861F8AF0C50017EC22 /* CommServiceViewController.swift */,
 				78C264881F8AF0F00017EC22 /* CommService.storyboard */,
+				78C2648A1F8EA3EB0017EC22 /* Leaderboard.storyboard */,
+				78C2648C1F8EA4050017EC22 /* LeaderboardViewController.swift */,
 			);
 			path = TheGeorgiaWay;
 			sourceTree = "<group>";
@@ -274,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78FB94671F5F38EA000E3DE5 /* LaunchScreen.storyboard in Resources */,
+				78C2648B1F8EA3EB0017EC22 /* Leaderboard.storyboard in Resources */,
 				783BC4DC1F65C8AF008C40CC /* UniversLTStd 2.otf in Resources */,
 				78FB94641F5F38EA000E3DE5 /* Assets.xcassets in Resources */,
 				783BC4E01F65C8C1008C40CC /* Riverhack Swashes.otf in Resources */,
@@ -311,6 +318,7 @@
 				783BC4E81F66D538008C40CC /* WebViewViewController.swift in Sources */,
 				78FB945D1F5F38EA000E3DE5 /* AppDelegate.swift in Sources */,
 				78C264871F8AF0C60017EC22 /* CommServiceViewController.swift in Sources */,
+				78C2648D1F8EA4050017EC22 /* LeaderboardViewController.swift in Sources */,
 				78C264851F869E290017EC22 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
