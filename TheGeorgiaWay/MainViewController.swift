@@ -22,6 +22,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var titles = ["Dawgs Beat Tennessee 41-0", "Gym Dawgs Take 1st Again", "Uga Enjoying a Saturday in Athens", "Swim Records at Last Meet"]
     
+    @IBOutlet weak var blogWebView: UIWebView!
+    
     @IBOutlet weak var academicsButton: UIButton!
     
     @IBOutlet weak var personalDevButton: UIButton!
@@ -128,6 +130,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tabBar.delegate = self
         
+        let url = NSURL (string: "http://thegeorgiaway.com/news/")
+        let requestObj = URLRequest(url: url! as URL)
+        blogWebView.loadRequest(requestObj)
+        
         hideMoreButtons()
         
     }
@@ -143,7 +149,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.navigationController?.pushViewController(vc, animated: true)
         } else if item.tag == 2 {
             let vc = showWebViewViewController()
-            vc.url = "http://calendar.uga.edu/home/category/service-volunteer-opportunities/"
+            vc.url = "http://calendar.uga.edu/calendar"
             self.navigationController?.pushViewController(vc, animated: true)
         } else if item.tag == 3 {
             if isButtonsShown == false {
