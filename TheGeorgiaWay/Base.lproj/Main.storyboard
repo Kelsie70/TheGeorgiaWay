@@ -16,9 +16,6 @@
         <array key="UniversLTStd 2.otf">
             <string>UniversLTStd</string>
         </array>
-        <array key="UniversLTStd-Black.otf">
-            <string>UniversLTStd-Black</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Main View Controller-->
@@ -36,78 +33,42 @@
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W03-U5-e8r">
                                 <rect key="frame" x="0.0" y="618" width="375" height="49"/>
                                 <items>
-                                    <tabBarItem tag="1" title="Opportunity Form" image="personalcircleiconsmall" id="6G0-oQ-sSI" userLabel="Opportunity Form"/>
+                                    <tabBarItem tag="1" title="Blog" image="personalcircleiconsmall" id="6G0-oQ-sSI" userLabel="Blog"/>
                                     <tabBarItem tag="2" title="Calendar" image="careerdevcircleiconsmall" id="fgo-bg-gE7"/>
                                     <tabBarItem tag="4" title="Service Hours" image="connectcircleiconsmall" id="5I9-Gp-P7q" userLabel="Comm Service Hours"/>
-                                    <tabBarItem tag="5" title="CampusTap" image="blogcircleiconsmall" id="4kb-sp-iXa"/>
+                                    <tabBarItem tag="5" title="TGW Network" image="blogcircleiconsmall" id="4kb-sp-iXa"/>
                                     <tabBarItem tag="3" systemItem="more" id="1wi-mg-QT8"/>
                                 </items>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tabBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="188" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h7X-cQ-oc1">
-                                <rect key="frame" x="0.0" y="183" width="375" height="435"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="blogCell" id="j8u-Hf-90x" customClass="BlogTableViewCell" customModule="TheGeorgiaWay" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="188"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j8u-Hf-90x" id="8Rz-9K-7Ag">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="188"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SuT-yg-gBD">
-                                                    <rect key="frame" x="8" y="45" width="359" height="134.5"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gh-Bj-K1I">
-                                                    <rect key="frame" x="8" y="20" width="359" height="17"/>
-                                                    <fontDescription key="fontDescription" name="UniversLTStd-Black" family="Univers LT Std" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="3gh-Bj-K1I" secondAttribute="trailing" constant="8" id="Lm8-pw-XMe"/>
-                                                <constraint firstItem="SuT-yg-gBD" firstAttribute="top" secondItem="3gh-Bj-K1I" secondAttribute="bottom" constant="8" id="PVM-YR-jgE"/>
-                                                <constraint firstItem="SuT-yg-gBD" firstAttribute="leading" secondItem="8Rz-9K-7Ag" secondAttribute="leading" constant="8" id="VEM-5j-IKJ"/>
-                                                <constraint firstItem="3gh-Bj-K1I" firstAttribute="top" secondItem="8Rz-9K-7Ag" secondAttribute="top" constant="20" id="WTW-xX-B8x"/>
-                                                <constraint firstAttribute="bottom" secondItem="SuT-yg-gBD" secondAttribute="bottom" constant="8" id="bcb-76-kyF"/>
-                                                <constraint firstItem="3gh-Bj-K1I" firstAttribute="leading" secondItem="8Rz-9K-7Ag" secondAttribute="leading" constant="8" id="dDP-VM-eDL"/>
-                                                <constraint firstAttribute="trailing" secondItem="SuT-yg-gBD" secondAttribute="trailing" constant="8" id="yXi-0D-aap"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <outlet property="blogImage" destination="SuT-yg-gBD" id="tXM-is-o5V"/>
-                                            <outlet property="blogTitle" destination="3gh-Bj-K1I" id="uc1-tn-Voz"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gr2-dK-xG2">
-                                <rect key="frame" x="0.0" y="-596" width="375" height="1214"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VQe-0b-2nZ">
                                 <rect key="frame" x="0.0" y="64" width="375" height="120"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanfordpost" translatesAutoresizingMaskIntoConstraints="NO" id="tXy-yw-cqU">
                                         <rect key="frame" x="0.0" y="-40" width="375" height="160"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Social G - Transparent - No Logo" translatesAutoresizingMaskIntoConstraints="NO" id="mUb-jy-EHx">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Social G - Transparent - No Logo" translatesAutoresizingMaskIntoConstraints="NO" id="mUb-jy-EHx">
                                         <rect key="frame" x="0.0" y="30" width="375" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.89837678109999997" green="0.16064263470000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="tXy-yw-cqU" secondAttribute="trailing" id="7TB-mx-OPJ"/>
+                                    <constraint firstItem="mUb-jy-EHx" firstAttribute="leading" secondItem="VQe-0b-2nZ" secondAttribute="leading" id="Er5-aw-D3g"/>
+                                    <constraint firstAttribute="bottom" secondItem="mUb-jy-EHx" secondAttribute="bottom" constant="30" id="N1w-mA-rko"/>
+                                    <constraint firstItem="mUb-jy-EHx" firstAttribute="top" secondItem="VQe-0b-2nZ" secondAttribute="top" constant="30" id="RA2-Cr-dMz"/>
+                                    <constraint firstAttribute="trailing" secondItem="mUb-jy-EHx" secondAttribute="trailing" id="clj-JI-KEr"/>
                                     <constraint firstItem="tXy-yw-cqU" firstAttribute="leading" secondItem="VQe-0b-2nZ" secondAttribute="leading" id="oZx-eG-PPZ"/>
                                     <constraint firstAttribute="height" constant="120" id="sq9-FR-vTd"/>
                                     <constraint firstItem="tXy-yw-cqU" firstAttribute="top" secondItem="VQe-0b-2nZ" secondAttribute="top" constant="-40" id="u0b-gX-xew"/>
                                     <constraint firstAttribute="bottom" secondItem="tXy-yw-cqU" secondAttribute="bottom" id="uCd-Yk-pyQ"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SMM- UGA vs Nicholls-3557" translatesAutoresizingMaskIntoConstraints="NO" id="rrc-OL-8RP">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="338-wv-6Zq">
                                 <rect key="frame" x="155" y="589" width="220" height="29"/>
                                 <color key="backgroundColor" red="1" green="0.55248086890000003" blue="0.54264942319999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -192,35 +153,76 @@
                                     <action selector="leadershipDevAction:" destination="bf2-vM-wlH" eventType="touchUpInside" id="46g-hq-Azs"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F68-dC-xKP" userLabel="Social Media">
+                                <rect key="frame" x="155" y="386" width="220" height="29"/>
+                                <color key="backgroundColor" red="1" green="0.55248086890000003" blue="0.54264942319999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="d2y-qL-RvE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="UniversLTStd" family="Univers LT Std" pointSize="17"/>
+                                <state key="normal" title="Social Media">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="socialMediaAction:" destination="bf2-vM-wlH" eventType="touchUpInside" id="WlE-V2-JOW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIM-rw-Oty" userLabel="Opportunity Form">
+                                <rect key="frame" x="155" y="415" width="220" height="29"/>
+                                <color key="backgroundColor" red="1" green="0.55248086890000003" blue="0.54264942319999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="SaZ-XC-49B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="UniversLTStd" family="Univers LT Std" pointSize="17"/>
+                                <state key="normal" title="Opportunity Form">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="opportunityFormAction:" destination="bf2-vM-wlH" eventType="touchUpInside" id="KBx-ZV-qUr"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vG5-EB-5ym">
+                                <rect key="frame" x="0.0" y="64" width="375" height="323"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="THE GEORGIA WAY">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="74" name="RIVERHACK-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="odr-bj-rtO" secondAttribute="trailing" constant="-16" id="8i0-ZO-jRa"/>
                             <constraint firstItem="VQe-0b-2nZ" firstAttribute="top" secondItem="YgR-6k-lYI" secondAttribute="bottom" id="Af1-Vo-ryt"/>
                             <constraint firstItem="VQe-0b-2nZ" firstAttribute="leading" secondItem="T9p-4x-lO3" secondAttribute="leading" id="Bxq-tQ-LYE"/>
+                            <constraint firstAttribute="trailing" secondItem="vG5-EB-5ym" secondAttribute="trailing" id="CRY-Fs-C0H"/>
+                            <constraint firstItem="odr-bj-rtO" firstAttribute="top" secondItem="lIM-rw-Oty" secondAttribute="bottom" id="Eoe-DB-lAg"/>
                             <constraint firstItem="W03-U5-e8r" firstAttribute="leading" secondItem="T9p-4x-lO3" secondAttribute="leading" id="HAd-Aq-aKj"/>
+                            <constraint firstItem="lIM-rw-Oty" firstAttribute="top" secondItem="F68-dC-xKP" secondAttribute="bottom" id="HEP-ao-mX8"/>
                             <constraint firstItem="fod-Tc-vFv" firstAttribute="top" secondItem="W03-U5-e8r" secondAttribute="bottom" id="Jwt-0S-Mhs"/>
-                            <constraint firstItem="W03-U5-e8r" firstAttribute="top" secondItem="gr2-dK-xG2" secondAttribute="bottom" id="LxR-c6-cOb"/>
                             <constraint firstItem="5c3-Dy-jVD" firstAttribute="top" secondItem="gq0-hi-axN" secondAttribute="bottom" id="Mcj-L0-Mo7"/>
                             <constraint firstItem="pbX-bb-scm" firstAttribute="top" secondItem="5c3-Dy-jVD" secondAttribute="bottom" id="Mhz-wq-I3z"/>
-                            <constraint firstAttribute="trailing" secondItem="h7X-cQ-oc1" secondAttribute="trailing" id="ONn-vN-a9C"/>
-                            <constraint firstItem="gr2-dK-xG2" firstAttribute="leading" secondItem="T9p-4x-lO3" secondAttribute="leading" id="PyQ-2T-amY"/>
+                            <constraint firstItem="vG5-EB-5ym" firstAttribute="top" secondItem="YgR-6k-lYI" secondAttribute="bottom" id="NzW-m5-3M4"/>
                             <constraint firstItem="338-wv-6Zq" firstAttribute="top" secondItem="pbX-bb-scm" secondAttribute="bottom" id="TfB-XP-mlk"/>
-                            <constraint firstAttribute="trailing" secondItem="gr2-dK-xG2" secondAttribute="trailing" id="VoB-EU-KtW"/>
-                            <constraint firstItem="W03-U5-e8r" firstAttribute="top" secondItem="h7X-cQ-oc1" secondAttribute="bottom" id="Vty-bH-kGa"/>
-                            <constraint firstItem="W03-U5-e8r" firstAttribute="top" secondItem="h7X-cQ-oc1" secondAttribute="bottom" id="XBs-FQ-NeJ"/>
                             <constraint firstItem="gq0-hi-axN" firstAttribute="top" secondItem="CK5-2D-u1U" secondAttribute="bottom" id="Y9J-mk-t87"/>
-                            <constraint firstItem="gr2-dK-xG2" firstAttribute="top" secondItem="VQe-0b-2nZ" secondAttribute="bottom" constant="-780" id="aPK-eC-4mS"/>
                             <constraint firstAttribute="trailing" secondItem="5c3-Dy-jVD" secondAttribute="trailing" id="b2x-l7-AVc"/>
                             <constraint firstItem="W03-U5-e8r" firstAttribute="top" secondItem="338-wv-6Zq" secondAttribute="bottom" id="baF-QC-qqW"/>
-                            <constraint firstItem="h7X-cQ-oc1" firstAttribute="top" secondItem="YgR-6k-lYI" secondAttribute="bottom" constant="119" id="bxx-GH-Mdz"/>
                             <constraint firstItem="gq0-hi-axN" firstAttribute="trailing" secondItem="T9p-4x-lO3" secondAttribute="trailingMargin" constant="16" id="eRF-Ep-ylW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CK5-2D-u1U" secondAttribute="trailing" constant="-16" id="eiX-2T-FsQ"/>
                             <constraint firstAttribute="trailing" secondItem="VQe-0b-2nZ" secondAttribute="trailing" id="fK7-sr-ciU"/>
                             <constraint firstItem="CK5-2D-u1U" firstAttribute="top" secondItem="odr-bj-rtO" secondAttribute="bottom" id="lvG-sC-vuC"/>
                             <constraint firstAttribute="trailing" secondItem="pbX-bb-scm" secondAttribute="trailing" id="ouJ-FH-Nyv"/>
-                            <constraint firstItem="h7X-cQ-oc1" firstAttribute="leading" secondItem="T9p-4x-lO3" secondAttribute="leading" id="sKP-mq-rYq"/>
+                            <constraint firstItem="vG5-EB-5ym" firstAttribute="leading" secondItem="T9p-4x-lO3" secondAttribute="leading" id="pfe-IH-iqx"/>
+                            <constraint firstItem="fod-Tc-vFv" firstAttribute="top" secondItem="vG5-EB-5ym" secondAttribute="bottom" constant="280" id="u6R-0E-giW"/>
                             <constraint firstAttribute="trailing" secondItem="338-wv-6Zq" secondAttribute="trailing" id="uAb-n5-55U"/>
+                            <constraint firstAttribute="trailing" secondItem="F68-dC-xKP" secondAttribute="trailing" id="viM-OQ-m3W"/>
+                            <constraint firstAttribute="trailing" secondItem="lIM-rw-Oty" secondAttribute="trailing" id="xOJ-2i-diL"/>
                             <constraint firstAttribute="trailing" secondItem="W03-U5-e8r" secondAttribute="trailing" id="yTy-jB-0BN"/>
                         </constraints>
                     </view>
@@ -228,18 +230,18 @@
                     <connections>
                         <outlet property="academicsButton" destination="338-wv-6Zq" id="zo4-sB-WCK"/>
                         <outlet property="alumniButton" destination="pbX-bb-scm" id="vGc-i2-GGc"/>
-                        <outlet property="blogWebView" destination="gr2-dK-xG2" id="6cW-SZ-r3f"/>
                         <outlet property="careerDevButton" destination="5c3-Dy-jVD" id="4HV-8I-tsb"/>
                         <outlet property="commOutreachButton" destination="gq0-hi-axN" id="LzA-m2-rkj"/>
                         <outlet property="leadershipDevButton" destination="CK5-2D-u1U" id="Ll4-6P-QdH"/>
+                        <outlet property="opportunityFormButton" destination="lIM-rw-Oty" id="Vgp-mo-hQe"/>
                         <outlet property="personalDevButton" destination="odr-bj-rtO" id="4iA-ht-eaa"/>
+                        <outlet property="socialMediaButton" destination="F68-dC-xKP" id="WQa-Vo-Cz6"/>
                         <outlet property="tabBar" destination="W03-U5-e8r" id="PZS-lc-SBB"/>
                         <outlet property="tabOption1" destination="6G0-oQ-sSI" id="aZU-kM-YTE"/>
                         <outlet property="tabOption2" destination="fgo-bg-gE7" id="9CZ-28-mhz"/>
                         <outlet property="tabOption3" destination="1wi-mg-QT8" id="8BV-X5-ysV"/>
                         <outlet property="tabOption4" destination="5I9-Gp-P7q" id="E7b-X7-tsH"/>
                         <outlet property="tabOption5" destination="4kb-sp-iXa" id="Fgv-Wj-O9k"/>
-                        <outlet property="tableView" destination="h7X-cQ-oc1" id="weH-rq-www"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ooC-8g-T4v" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -602,6 +604,7 @@
     </scenes>
     <resources>
         <image name="Campus Tap-Logo - BW" width="500" height="500"/>
+        <image name="SMM- UGA vs Nicholls-3557" width="5184" height="3456"/>
         <image name="Social G - Transparent - No Logo" width="658" height="70"/>
         <image name="blogcircleiconsmall" width="30" height="30"/>
         <image name="careerdevcircleiconsmall" width="30" height="30"/>

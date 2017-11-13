@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ecQ-Xf-aRW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RIVERHACK.otf">
+            <string>RIVERHACK-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Social Media View Controller-->
+        <scene sceneID="1xV-6Y-pL8">
+            <objects>
+                <viewController storyboardIdentifier="SocialMediaViewController" id="ecQ-Xf-aRW" customClass="SocialMediaViewController" customModule="TheGeorgiaWay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TTc-cU-Yuj"/>
+                        <viewControllerLayoutGuide type="bottom" id="NrQ-32-Xwd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jjx-VU-wMf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Follow us on social media!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CDg-4i-4l7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="RIVERHACK-Regular" family="RIVERHACK" pointSize="42"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SdX-Ir-ckO">
+                                <rect key="frame" x="0.0" y="150" width="375" height="467"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9Py-ar-qyk">
+                                        <rect key="frame" x="23" y="0.0" width="329" height="150"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSw-Jp-eKt">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="LQp-H5-pnh"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="facebookIcon"/>
+                                                <connections>
+                                                    <action selector="facebookAction:" destination="ecQ-Xf-aRW" eventType="touchUpInside" id="EWo-9i-95t"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMh-Ys-9gK">
+                                                <rect key="frame" x="180" y="0.0" width="149" height="150"/>
+                                                <state key="normal" backgroundImage="instagramIcon"/>
+                                                <connections>
+                                                    <action selector="instagramAction:" destination="ecQ-Xf-aRW" eventType="touchUpInside" id="oIR-ZC-wmx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="pSw-Jp-eKt" firstAttribute="top" secondItem="9Py-ar-qyk" secondAttribute="top" id="FC3-5q-hkN"/>
+                                            <constraint firstItem="pSw-Jp-eKt" firstAttribute="top" secondItem="uMh-Ys-9gK" secondAttribute="top" id="iBC-GL-0T8"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="TDb-pP-Ond">
+                                        <rect key="frame" x="23" y="160" width="329" height="147"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyX-Ar-vB5">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="147"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="un6-Ow-Ccr"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="linkedInIcon"/>
+                                                <connections>
+                                                    <action selector="linkedInAction:" destination="ecQ-Xf-aRW" eventType="touchUpInside" id="kFJ-Rk-Okv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYc-hs-W3G">
+                                                <rect key="frame" x="180" y="0.0" width="149" height="147"/>
+                                                <state key="normal" backgroundImage="TwitterIcon"/>
+                                                <connections>
+                                                    <action selector="twitterAction:" destination="ecQ-Xf-aRW" eventType="touchUpInside" id="L64-C3-ruv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFt-sI-kpb">
+                                        <rect key="frame" x="112.5" y="317" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="AkP-Wp-HOy"/>
+                                            <constraint firstAttribute="width" constant="150" id="Hbf-cZ-JlO"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="youtubeIcon"/>
+                                        <connections>
+                                            <action selector="youtubeAction:" destination="ecQ-Xf-aRW" eventType="touchUpInside" id="bz8-6h-bik"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9Py-ar-qyk" firstAttribute="leading" secondItem="TDb-pP-Ond" secondAttribute="leading" id="Y84-XB-fGP"/>
+                                    <constraint firstItem="TDb-pP-Ond" firstAttribute="centerY" secondItem="SdX-Ir-ckO" secondAttribute="centerY" id="cpY-fs-Khf"/>
+                                    <constraint firstItem="9Py-ar-qyk" firstAttribute="leading" secondItem="SdX-Ir-ckO" secondAttribute="leading" constant="23" id="mm3-g6-Dhb"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CDg-4i-4l7" firstAttribute="top" secondItem="Jjx-VU-wMf" secondAttribute="top" id="2wN-r4-fUL"/>
+                            <constraint firstAttribute="trailing" secondItem="CDg-4i-4l7" secondAttribute="trailing" id="8tX-L6-7I2"/>
+                            <constraint firstItem="NrQ-32-Xwd" firstAttribute="top" secondItem="SdX-Ir-ckO" secondAttribute="bottom" constant="50" id="CVN-hF-0ez"/>
+                            <constraint firstItem="SdX-Ir-ckO" firstAttribute="top" secondItem="TTc-cU-Yuj" secondAttribute="bottom" constant="130" id="YS1-sE-ocx"/>
+                            <constraint firstItem="NrQ-32-Xwd" firstAttribute="top" secondItem="CDg-4i-4l7" secondAttribute="bottom" constant="467" id="bTe-QH-m75"/>
+                            <constraint firstItem="SdX-Ir-ckO" firstAttribute="leading" secondItem="Jjx-VU-wMf" secondAttribute="leading" id="d1y-fU-MGv"/>
+                            <constraint firstAttribute="trailing" secondItem="SdX-Ir-ckO" secondAttribute="trailing" id="drv-hJ-muw"/>
+                            <constraint firstItem="CDg-4i-4l7" firstAttribute="leading" secondItem="Jjx-VU-wMf" secondAttribute="leading" id="tqu-Tn-D92"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZMA-gN-iBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="156" y="93.103448275862078"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TwitterIcon" width="42" height="42"/>
+        <image name="facebookIcon" width="42" height="42"/>
+        <image name="instagramIcon" width="42" height="42"/>
+        <image name="linkedInIcon" width="42" height="42"/>
+        <image name="youtubeIcon" width="42" height="42"/>
+    </resources>
+</document>

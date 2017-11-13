@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TheGeorgiaWay/MainViewController.swift"
-            timestampString = "529203163.205209"
+            timestampString = "532232640.924012"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "MainViewController"
             landmarkType = "3">
          </BreakpointContent>

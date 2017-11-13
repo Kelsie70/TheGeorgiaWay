@@ -8,21 +8,8 @@
 
 import UIKit
 
-class BlogTableViewCell: UITableViewCell{
+class MainViewController: UIViewController, UITabBarDelegate {
     
-    @IBOutlet weak var blogImage: UIImageView!
-  
-    @IBOutlet weak var blogTitle: UILabel!
-    
-}
-
-class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITabBarDelegate {
-    
-    var images = ["football1.jpg", "gymnastics.jpg", "ugadog.jpg", "swim.jpg"]
-    
-    var titles = ["Dawgs Beat Tennessee 41-0", "Gym Dawgs Take 1st Again", "Uga Enjoying a Saturday in Athens", "Swim Records at Last Meet"]
-    
-    @IBOutlet weak var blogWebView: UIWebView!
     
     @IBOutlet weak var academicsButton: UIButton!
     
@@ -36,6 +23,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var leadershipDevButton: UIButton!
     
+    @IBOutlet weak var opportunityFormButton: UIButton!
+    
+    @IBOutlet weak var socialMediaButton: UIButton!
+    
     @IBOutlet weak var tabBar: UITabBar!
     
     @IBOutlet weak var tabOption1: UITabBarItem!
@@ -47,10 +38,22 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tabOption4: UITabBarItem!
     
     @IBOutlet weak var tabOption5: UITabBarItem!
-
-    @IBOutlet weak var tableView: UITableView!
     
     var isButtonsShown = false
+    
+    
+    @IBAction func socialMediaAction(_ sender: Any) {
+        let vc = showSocialMediaViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    @IBAction func opportunityFormAction(_ sender: Any) {
+        let vc = showWebViewViewController()
+        vc.url = "http://student-svcs.sports.uga.edu/current-student-athletes/opportunity-fund-request/"
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
     @IBAction func personalDevAction(_ sender: Any) {
         let vc = showWebViewViewController()
@@ -92,7 +95,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    
+    func showSocialMediaViewController() -> SocialMediaViewController {
+        let storyboard = UIStoryboard(name: "SocialMedia", bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: "SocialMediaViewController") as! SocialMediaViewController
+    }
     
     func showWebViewViewController() -> WebViewViewController {
         let storyboard = UIStoryboard(name: "WebView", bundle: nil)
@@ -104,6 +110,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         return storyboard.instantiateViewController(withIdentifier: "CommServiceViewController") as! CommServiceViewController
     }
     
+    func showBlogViewController() -> BlogViewController {
+        let storyboard = UIStoryboard(name: "Blog", bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: "BlogViewController") as! BlogViewController
+    }
+
+    
     func showMoreButtons() {
         academicsButton.isHidden = false;
         personalDevButton.isHidden = false;
@@ -111,6 +123,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         careerDevButton.isHidden = false;
         commOutreachButton.isHidden = false;
         leadershipDevButton.isHidden = false;
+        opportunityFormButton.isHidden = false;
+        socialMediaButton.isHidden = false;
     
     }
 
@@ -121,18 +135,14 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         careerDevButton.isHidden = true;
         commOutreachButton.isHidden = true;
         leadershipDevButton.isHidden = true;
+        opportunityFormButton.isHidden = true;
+        socialMediaButton.isHidden = true;
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.dataSource = self
-        tableView.delegate = self
         tabBar.delegate = self
-        
-        let url = NSURL (string: "http://thegeorgiaway.com/news/")
-        let requestObj = URLRequest(url: url! as URL)
-        blogWebView.loadRequest(requestObj)
         
         hideMoreButtons()
         
@@ -144,8 +154,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         if item.tag == 1 {
-            let vc = showWebViewViewController()
-            vc.url = "http://student-svcs.sports.uga.edu/current-student-athletes/opportunity-fund-request/"
+            let vc = showBlogViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         } else if item.tag == 2 {
             let vc = showWebViewViewController()
@@ -169,37 +178,5 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return titles.count // your number of cell here
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 250.0; //Choose your custom row height
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let image = images[indexPath.row]
-        let title = titles[indexPath.row]
-        
-        // Instantiate a cell
-        let cell = tableView.dequeueReusableCell(withIdentifier: "blogCell", for: indexPath) as! BlogTableViewCell
-        
-        // Adding the right informations
-        
-        if let uiimage = UIImage(named: image) {
-            cell.blogImage.image = uiimage
-        }
-        
-        cell.blogTitle?.text = title
-        
-        // Returning the cell
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("selected cell " + indexPath.row.description)
-    }
-    
 
 }

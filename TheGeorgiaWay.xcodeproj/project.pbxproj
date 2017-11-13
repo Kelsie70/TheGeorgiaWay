@@ -14,6 +14,10 @@
 		783BC4E21F65C8CA008C40CC /* Bulldogs Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 783BC4E11F65C8CA008C40CC /* Bulldogs Bold.otf */; };
 		783BC4E81F66D538008C40CC /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783BC4E71F66D538008C40CC /* WebViewViewController.swift */; };
 		783BC4EA1F66D54C008C40CC /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783BC4E91F66D54C008C40CC /* WebView.storyboard */; };
+		7876494C1FB8ED3500CE1DBC /* Blog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7876494B1FB8ED3500CE1DBC /* Blog.storyboard */; };
+		7876494E1FB8ED4C00CE1DBC /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7876494D1FB8ED4C00CE1DBC /* BlogViewController.swift */; };
+		787649501FB930F000CE1DBC /* SocialMedia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7876494F1FB930F000CE1DBC /* SocialMedia.storyboard */; };
+		787649521FB9310D00CE1DBC /* SocialMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787649511FB9310D00CE1DBC /* SocialMediaViewController.swift */; };
 		78C264851F869E290017EC22 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C264841F869E290017EC22 /* MainViewController.swift */; };
 		78C264871F8AF0C60017EC22 /* CommServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C264861F8AF0C50017EC22 /* CommServiceViewController.swift */; };
 		78C264891F8AF0F00017EC22 /* CommService.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C264881F8AF0F00017EC22 /* CommService.storyboard */; };
@@ -53,6 +57,10 @@
 		783BC4E11F65C8CA008C40CC /* Bulldogs Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bulldogs Bold.otf"; sourceTree = "<group>"; };
 		783BC4E71F66D538008C40CC /* WebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		783BC4E91F66D54C008C40CC /* WebView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
+		7876494B1FB8ED3500CE1DBC /* Blog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Blog.storyboard; sourceTree = "<group>"; };
+		7876494D1FB8ED4C00CE1DBC /* BlogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
+		7876494F1FB930F000CE1DBC /* SocialMedia.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SocialMedia.storyboard; sourceTree = "<group>"; };
+		787649511FB9310D00CE1DBC /* SocialMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMediaViewController.swift; sourceTree = "<group>"; };
 		78C264841F869E290017EC22 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		78C264861F8AF0C50017EC22 /* CommServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommServiceViewController.swift; sourceTree = "<group>"; };
 		78C264881F8AF0F00017EC22 /* CommService.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CommService.storyboard; sourceTree = "<group>"; };
@@ -137,6 +145,8 @@
 				78FB945C1F5F38EA000E3DE5 /* AppDelegate.swift */,
 				78FB945E1F5F38EA000E3DE5 /* ViewController.swift */,
 				78FB94601F5F38EA000E3DE5 /* Main.storyboard */,
+				7876494B1FB8ED3500CE1DBC /* Blog.storyboard */,
+				7876494D1FB8ED4C00CE1DBC /* BlogViewController.swift */,
 				78C264841F869E290017EC22 /* MainViewController.swift */,
 				78FB94631F5F38EA000E3DE5 /* Assets.xcassets */,
 				78FB94651F5F38EA000E3DE5 /* LaunchScreen.storyboard */,
@@ -147,6 +157,8 @@
 				78C264881F8AF0F00017EC22 /* CommService.storyboard */,
 				78C2648A1F8EA3EB0017EC22 /* Leaderboard.storyboard */,
 				78C2648C1F8EA4050017EC22 /* LeaderboardViewController.swift */,
+				7876494F1FB930F000CE1DBC /* SocialMedia.storyboard */,
+				787649511FB9310D00CE1DBC /* SocialMediaViewController.swift */,
 			);
 			path = TheGeorgiaWay;
 			sourceTree = "<group>";
@@ -281,10 +293,12 @@
 			files = (
 				78FB94671F5F38EA000E3DE5 /* LaunchScreen.storyboard in Resources */,
 				78C2648B1F8EA3EB0017EC22 /* Leaderboard.storyboard in Resources */,
+				7876494C1FB8ED3500CE1DBC /* Blog.storyboard in Resources */,
 				783BC4DC1F65C8AF008C40CC /* UniversLTStd 2.otf in Resources */,
 				78FB94641F5F38EA000E3DE5 /* Assets.xcassets in Resources */,
 				783BC4E01F65C8C1008C40CC /* Riverhack Swashes.otf in Resources */,
 				783BC4DE1F65C8B7008C40CC /* RIVERHACK.otf in Resources */,
+				787649501FB930F000CE1DBC /* SocialMedia.storyboard in Resources */,
 				783BC4E21F65C8CA008C40CC /* Bulldogs Bold.otf in Resources */,
 				783BC4D91F65C841008C40CC /* UniversLTStd-Black.otf in Resources */,
 				783BC4EA1F66D54C008C40CC /* WebView.storyboard in Resources */,
@@ -318,8 +332,10 @@
 				783BC4E81F66D538008C40CC /* WebViewViewController.swift in Sources */,
 				78FB945D1F5F38EA000E3DE5 /* AppDelegate.swift in Sources */,
 				78C264871F8AF0C60017EC22 /* CommServiceViewController.swift in Sources */,
+				787649521FB9310D00CE1DBC /* SocialMediaViewController.swift in Sources */,
 				78C2648D1F8EA4050017EC22 /* LeaderboardViewController.swift in Sources */,
 				78C264851F869E290017EC22 /* MainViewController.swift in Sources */,
+				7876494E1FB8ED4C00CE1DBC /* BlogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
