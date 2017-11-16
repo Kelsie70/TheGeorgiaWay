@@ -80,26 +80,34 @@ class BlogViewController: UIViewController, UITableViewDelegate, UITableViewData
         let titleRendered = passedDictionaryPost?["rendered"] as? String
         print(titleRendered ?? "not there posts")
         
+        let articleLink = (whichItemPost as AnyObject)["link"] as? String
+        print(articleLink ?? "not there article link")
+        
         let passedDictionaryLink = (whichItemPost as AnyObject)["_links"] as? [String:Any]
-        let featuredMedia = passedDictionaryLink?["wp:featuredmedia"] as? [String:Any]
-        let featuredMediaLink = featuredMedia?["href"] as? String
+        let featuredMedia = passedDictionaryLink?["wp:featuredmedia"] as? NSArray //not as? [String:Any]
+        let dataValuesMedia = featuredMedia?[0] as? [String:Any]
+        let featuredMediaLink = (dataValuesMedia as AnyObject)["href"] as? String
         print(featuredMediaLink ?? "not there links")
-        
-        /*
+  
         let dataUrlMedia = NSURL(string: featuredMediaLink ?? "http://thegeorgiaway.com/wp-json/wp/v2/media/10224")
-        let theDataMedia = NSData(contentsOf: dataUrlMedia! as URL)
-        dataValuesMedia = try! JSONSerialization.jsonObject(with: theDataMedia! as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
         
-        let whichItemMedia = dataValuesMedia[(indexPath as NSIndexPath).row]
+        var req = NSURLRequest(url: NSURL(string: "http://thegeorgiaway.com/wp-content/uploads/2015/09/LPE-East-Athens-2017.png") as! URL)
         
-        let passedDictionaryMedia = (whichItemMedia as AnyObject)["media_details"] as? [String:Any]
+        if let theDataMedia = NSData(contentsOf: dataUrlMedia! as URL) {
+        
+        let dataValuesMediaLink = try! JSONSerialization.jsonObject(with: theDataMedia as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String:Any]
+        //let whichItemMedia = dataValuesMediaLink[(indexPath as NSIndexPath).row]
+        
+        let passedDictionaryMedia = (dataValuesMediaLink as AnyObject)["media_details"] as? [String:Any]
         let sizesMedia = passedDictionaryMedia?["sizes"] as?  [String:Any]
         let mediumMedia = sizesMedia?["medium"] as?  [String:Any]
         let innerItemMedia = mediumMedia?["source_url"] as? String
-        */
-        let url = NSURL(string: innerItem ?? "http://thegeorgiaway.com/wp-content/uploads/2015/09/LPE-East-Athens-2017.png")
-        let req = NSURLRequest(url:url! as URL)
-        
+        print(innerItemMedia)
+        let url = NSURL(string: innerItemMedia ?? "http://thegeorgiaway.com/wp-content/uploads/2015/09/LPE-East-Athens-2017.png")
+        req = NSURLRequest(url:url! as URL)
+        }
+    
+        print("Link: " + req.description)
         // Instantiate a cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "blogCell", for: indexPath) as! BlogTableViewCell
         
