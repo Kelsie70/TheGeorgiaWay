@@ -14,6 +14,7 @@
 		783BC4E21F65C8CA008C40CC /* Bulldogs Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 783BC4E11F65C8CA008C40CC /* Bulldogs Bold.otf */; };
 		783BC4E81F66D538008C40CC /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783BC4E71F66D538008C40CC /* WebViewViewController.swift */; };
 		783BC4EA1F66D54C008C40CC /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783BC4E91F66D54C008C40CC /* WebView.storyboard */; };
+		786BBCB71FD8B5F700E2FDB9 /* WebBlog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786BBCB61FD8B5F700E2FDB9 /* WebBlog.storyboard */; };
 		7876494C1FB8ED3500CE1DBC /* Blog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7876494B1FB8ED3500CE1DBC /* Blog.storyboard */; };
 		7876494E1FB8ED4C00CE1DBC /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7876494D1FB8ED4C00CE1DBC /* BlogViewController.swift */; };
 		787649501FB930F000CE1DBC /* SocialMedia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7876494F1FB930F000CE1DBC /* SocialMedia.storyboard */; };
@@ -23,6 +24,7 @@
 		78C264891F8AF0F00017EC22 /* CommService.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C264881F8AF0F00017EC22 /* CommService.storyboard */; };
 		78C2648B1F8EA3EB0017EC22 /* Leaderboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C2648A1F8EA3EB0017EC22 /* Leaderboard.storyboard */; };
 		78C2648D1F8EA4050017EC22 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C2648C1F8EA4050017EC22 /* LeaderboardViewController.swift */; };
+		78D03C8E1FD8BA2F002CF0FC /* WebBlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D03C8D1FD8BA2F002CF0FC /* WebBlogViewController.swift */; };
 		78FB945D1F5F38EA000E3DE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FB945C1F5F38EA000E3DE5 /* AppDelegate.swift */; };
 		78FB945F1F5F38EA000E3DE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FB945E1F5F38EA000E3DE5 /* ViewController.swift */; };
 		78FB94621F5F38EA000E3DE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FB94601F5F38EA000E3DE5 /* Main.storyboard */; };
@@ -57,6 +59,7 @@
 		783BC4E11F65C8CA008C40CC /* Bulldogs Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bulldogs Bold.otf"; sourceTree = "<group>"; };
 		783BC4E71F66D538008C40CC /* WebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		783BC4E91F66D54C008C40CC /* WebView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
+		786BBCB61FD8B5F700E2FDB9 /* WebBlog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebBlog.storyboard; sourceTree = "<group>"; };
 		7876494B1FB8ED3500CE1DBC /* Blog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Blog.storyboard; sourceTree = "<group>"; };
 		7876494D1FB8ED4C00CE1DBC /* BlogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
 		7876494F1FB930F000CE1DBC /* SocialMedia.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SocialMedia.storyboard; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 		78C264881F8AF0F00017EC22 /* CommService.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CommService.storyboard; sourceTree = "<group>"; };
 		78C2648A1F8EA3EB0017EC22 /* Leaderboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Leaderboard.storyboard; sourceTree = "<group>"; };
 		78C2648C1F8EA4050017EC22 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		78D03C8D1FD8BA2F002CF0FC /* WebBlogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebBlogViewController.swift; sourceTree = "<group>"; };
 		78FB94591F5F38EA000E3DE5 /* TheGeorgiaWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGeorgiaWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FB945C1F5F38EA000E3DE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78FB945E1F5F38EA000E3DE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 			children = (
 				78FB945C1F5F38EA000E3DE5 /* AppDelegate.swift */,
 				78FB945E1F5F38EA000E3DE5 /* ViewController.swift */,
+				786BBCB61FD8B5F700E2FDB9 /* WebBlog.storyboard */,
+				78D03C8D1FD8BA2F002CF0FC /* WebBlogViewController.swift */,
 				78FB94601F5F38EA000E3DE5 /* Main.storyboard */,
 				7876494B1FB8ED3500CE1DBC /* Blog.storyboard */,
 				7876494D1FB8ED4C00CE1DBC /* BlogViewController.swift */,
@@ -300,6 +306,7 @@
 				783BC4DE1F65C8B7008C40CC /* RIVERHACK.otf in Resources */,
 				787649501FB930F000CE1DBC /* SocialMedia.storyboard in Resources */,
 				783BC4E21F65C8CA008C40CC /* Bulldogs Bold.otf in Resources */,
+				786BBCB71FD8B5F700E2FDB9 /* WebBlog.storyboard in Resources */,
 				783BC4D91F65C841008C40CC /* UniversLTStd-Black.otf in Resources */,
 				783BC4EA1F66D54C008C40CC /* WebView.storyboard in Resources */,
 				78C264891F8AF0F00017EC22 /* CommService.storyboard in Resources */,
@@ -331,6 +338,7 @@
 				78FB945F1F5F38EA000E3DE5 /* ViewController.swift in Sources */,
 				783BC4E81F66D538008C40CC /* WebViewViewController.swift in Sources */,
 				78FB945D1F5F38EA000E3DE5 /* AppDelegate.swift in Sources */,
+				78D03C8E1FD8BA2F002CF0FC /* WebBlogViewController.swift in Sources */,
 				78C264871F8AF0C60017EC22 /* CommServiceViewController.swift in Sources */,
 				787649521FB9310D00CE1DBC /* SocialMediaViewController.swift in Sources */,
 				78C2648D1F8EA4050017EC22 /* LeaderboardViewController.swift in Sources */,

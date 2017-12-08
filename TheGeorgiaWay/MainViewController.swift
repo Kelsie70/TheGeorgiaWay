@@ -114,6 +114,11 @@ class MainViewController: UIViewController, UITabBarDelegate {
         let storyboard = UIStoryboard(name: "Blog", bundle: nil)
         return storyboard.instantiateViewController(withIdentifier: "BlogViewController") as! BlogViewController
     }
+    
+    func showWebBlogViewController() -> WebBlogViewController {
+        let storyboard = UIStoryboard(name: "WebBlog", bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: "WebBlogViewController") as! WebBlogViewController
+    }
 
     
     func showMoreButtons() {
@@ -150,11 +155,13 @@ class MainViewController: UIViewController, UITabBarDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         hideMoreButtons()
+    self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         if item.tag == 1 {
-            let vc = showBlogViewController()
+            let vc = showWebBlogViewController()
+            vc.url = "http://thegeorgiaway.com/news/"
             self.navigationController?.pushViewController(vc, animated: true)
         } else if item.tag == 2 {
             let vc = showWebViewViewController()
@@ -176,6 +183,7 @@ class MainViewController: UIViewController, UITabBarDelegate {
             vc.url = "https://network.thegeorgiaway.com/"
             self.navigationController?.pushViewController(vc, animated: true)
         }
+        
     }
 
 

@@ -100,7 +100,7 @@ class BlogViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let passedDictionaryMedia = (dataValuesMediaLink as AnyObject)["media_details"] as? [String:Any]
         let sizesMedia = passedDictionaryMedia?["sizes"] as?  [String:Any]
-        let mediumMedia = sizesMedia?["medium"] as?  [String:Any]
+        let mediumMedia = sizesMedia?["full"] as?  [String:Any]
         let innerItemMedia = mediumMedia?["source_url"] as? String
         print(innerItemMedia)
         let url = NSURL(string: innerItemMedia ?? "http://thegeorgiaway.com/wp-content/uploads/2015/09/LPE-East-Athens-2017.png")

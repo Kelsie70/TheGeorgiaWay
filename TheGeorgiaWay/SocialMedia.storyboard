@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ecQ-Xf-aRW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ecQ-Xf-aRW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -33,51 +33,51 @@
                                 <fontDescription key="fontDescription" name="RIVERHACK-Regular" family="RIVERHACK" pointSize="42"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SdX-Ir-ckO">
-                                <rect key="frame" x="0.0" y="150" width="375" height="467"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SdX-Ir-ckO">
+                                <rect key="frame" x="0.0" y="194" width="375" height="453"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9Py-ar-qyk">
-                                        <rect key="frame" x="23" y="0.0" width="329" height="150"/>
+                                        <rect key="frame" x="23" y="0.0" width="329" height="144.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSw-Jp-eKt">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="LQp-H5-pnh"/>
-                                                </constraints>
-                                                <state key="normal" backgroundImage="facebookIcon"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="144.5"/>
+                                                <state key="normal" backgroundImage="Facebook"/>
                                                 <connections>
                                                     <action selector="facebookAction:" destination="ecQ-Xf-aRW" eventType="touchUpInside" id="EWo-9i-95t"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMh-Ys-9gK">
-                                                <rect key="frame" x="180" y="0.0" width="149" height="150"/>
-                                                <state key="normal" backgroundImage="instagramIcon"/>
+                                                <rect key="frame" x="180" y="0.0" width="149" height="144.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="149" id="tyq-mS-sc0"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="Instagram"/>
                                                 <connections>
                                                     <action selector="instagramAction:" destination="ecQ-Xf-aRW" eventType="touchUpInside" id="oIR-ZC-wmx"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="pSw-Jp-eKt" firstAttribute="top" secondItem="9Py-ar-qyk" secondAttribute="top" id="FC3-5q-hkN"/>
-                                            <constraint firstItem="pSw-Jp-eKt" firstAttribute="top" secondItem="uMh-Ys-9gK" secondAttribute="top" id="iBC-GL-0T8"/>
+                                            <constraint firstItem="pSw-Jp-eKt" firstAttribute="top" secondItem="9Py-ar-qyk" secondAttribute="top" id="A8D-J4-UVW"/>
+                                            <constraint firstItem="pSw-Jp-eKt" firstAttribute="top" secondItem="uMh-Ys-9gK" secondAttribute="top" id="izC-BJ-cHf"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="TDb-pP-Ond">
-                                        <rect key="frame" x="23" y="160" width="329" height="147"/>
+                                        <rect key="frame" x="23" y="154.5" width="329" height="144"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyX-Ar-vB5">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="147"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="un6-Ow-Ccr"/>
-                                                </constraints>
-                                                <state key="normal" backgroundImage="linkedInIcon"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="144"/>
+                                                <state key="normal" backgroundImage="Linkedin"/>
                                                 <connections>
                                                     <action selector="linkedInAction:" destination="ecQ-Xf-aRW" eventType="touchUpInside" id="kFJ-Rk-Okv"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYc-hs-W3G">
-                                                <rect key="frame" x="180" y="0.0" width="149" height="147"/>
-                                                <state key="normal" backgroundImage="TwitterIcon"/>
+                                                <rect key="frame" x="180" y="0.0" width="149" height="144"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="149" id="C5f-EP-8XW"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="Twitter"/>
                                                 <connections>
                                                     <action selector="twitterAction:" destination="ecQ-Xf-aRW" eventType="touchUpInside" id="L64-C3-ruv"/>
                                                 </connections>
@@ -85,36 +85,35 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFt-sI-kpb">
-                                        <rect key="frame" x="112.5" y="317" width="150" height="150"/>
+                                        <rect key="frame" x="112.5" y="308.5" width="150" height="144.5"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="AkP-Wp-HOy"/>
-                                            <constraint firstAttribute="width" constant="150" id="Hbf-cZ-JlO"/>
+                                            <constraint firstAttribute="width" constant="150" id="v6Y-Iu-wZo"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="youtubeIcon"/>
+                                        <state key="normal" backgroundImage="YouTube"/>
                                         <connections>
                                             <action selector="youtubeAction:" destination="ecQ-Xf-aRW" eventType="touchUpInside" id="bz8-6h-bik"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="9Py-ar-qyk" firstAttribute="leading" secondItem="TDb-pP-Ond" secondAttribute="leading" id="Y84-XB-fGP"/>
-                                    <constraint firstItem="TDb-pP-Ond" firstAttribute="centerY" secondItem="SdX-Ir-ckO" secondAttribute="centerY" id="cpY-fs-Khf"/>
-                                    <constraint firstItem="9Py-ar-qyk" firstAttribute="leading" secondItem="SdX-Ir-ckO" secondAttribute="leading" constant="23" id="mm3-g6-Dhb"/>
+                                    <constraint firstItem="9Py-ar-qyk" firstAttribute="leading" secondItem="TDb-pP-Ond" secondAttribute="leading" id="OGW-pa-mFe"/>
+                                    <constraint firstItem="9Py-ar-qyk" firstAttribute="leading" secondItem="SdX-Ir-ckO" secondAttribute="leading" constant="23" id="v3A-YH-Igc"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CDg-4i-4l7" firstAttribute="top" secondItem="Jjx-VU-wMf" secondAttribute="top" id="2wN-r4-fUL"/>
-                            <constraint firstAttribute="trailing" secondItem="CDg-4i-4l7" secondAttribute="trailing" id="8tX-L6-7I2"/>
-                            <constraint firstItem="NrQ-32-Xwd" firstAttribute="top" secondItem="SdX-Ir-ckO" secondAttribute="bottom" constant="50" id="CVN-hF-0ez"/>
-                            <constraint firstItem="SdX-Ir-ckO" firstAttribute="top" secondItem="TTc-cU-Yuj" secondAttribute="bottom" constant="130" id="YS1-sE-ocx"/>
-                            <constraint firstItem="NrQ-32-Xwd" firstAttribute="top" secondItem="CDg-4i-4l7" secondAttribute="bottom" constant="467" id="bTe-QH-m75"/>
-                            <constraint firstItem="SdX-Ir-ckO" firstAttribute="leading" secondItem="Jjx-VU-wMf" secondAttribute="leading" id="d1y-fU-MGv"/>
-                            <constraint firstAttribute="trailing" secondItem="SdX-Ir-ckO" secondAttribute="trailing" id="drv-hJ-muw"/>
-                            <constraint firstItem="CDg-4i-4l7" firstAttribute="leading" secondItem="Jjx-VU-wMf" secondAttribute="leading" id="tqu-Tn-D92"/>
+                            <constraint firstAttribute="trailing" secondItem="CDg-4i-4l7" secondAttribute="trailing" id="6sz-N8-KrJ"/>
+                            <constraint firstItem="CDg-4i-4l7" firstAttribute="leading" secondItem="SdX-Ir-ckO" secondAttribute="leading" id="8ib-Db-wjF"/>
+                            <constraint firstItem="CDg-4i-4l7" firstAttribute="leading" secondItem="Jjx-VU-wMf" secondAttribute="leading" id="Bek-84-ykk"/>
+                            <constraint firstItem="CDg-4i-4l7" firstAttribute="top" secondItem="Jjx-VU-wMf" secondAttribute="top" id="Ez9-cu-Uhq"/>
+                            <constraint firstItem="SdX-Ir-ckO" firstAttribute="top" secondItem="TTc-cU-Yuj" secondAttribute="bottom" constant="130" id="GWR-Eh-8Yv"/>
+                            <constraint firstItem="CDg-4i-4l7" firstAttribute="trailing" secondItem="SdX-Ir-ckO" secondAttribute="trailing" id="XDS-eP-oBu"/>
+                            <constraint firstItem="NrQ-32-Xwd" firstAttribute="top" secondItem="SdX-Ir-ckO" secondAttribute="bottom" constant="20" id="d8r-2H-Wd8"/>
+                            <constraint firstItem="NrQ-32-Xwd" firstAttribute="top" secondItem="CDg-4i-4l7" secondAttribute="bottom" constant="467" id="v1J-au-www"/>
                         </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZMA-gN-iBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,10 +121,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="TwitterIcon" width="42" height="42"/>
-        <image name="facebookIcon" width="42" height="42"/>
-        <image name="instagramIcon" width="42" height="42"/>
-        <image name="linkedInIcon" width="42" height="42"/>
-        <image name="youtubeIcon" width="42" height="42"/>
+        <image name="Facebook" width="128" height="128"/>
+        <image name="Instagram" width="128" height="128"/>
+        <image name="Linkedin" width="128" height="128"/>
+        <image name="Twitter" width="128" height="128"/>
+        <image name="YouTube" width="128" height="128"/>
     </resources>
 </document>

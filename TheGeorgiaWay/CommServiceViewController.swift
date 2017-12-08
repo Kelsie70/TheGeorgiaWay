@@ -71,7 +71,7 @@ class CommServiceViewController: UIViewController, MFMailComposeViewControllerDe
         
         // Configure the fields of the interface.
         composeVC.setToRecipients(["kelsie70@gmail.com"])
-        composeVC.setSubject("iOs App Test")
+        composeVC.setSubject("Community Service Hours")
         composeVC.setMessageBody("Name: " + fullName.text! + "\n"
                                 + "Sport: " + sport.text! + "\n"
                                 + "Email: " + email.text! + "\n"
@@ -85,8 +85,8 @@ class CommServiceViewController: UIViewController, MFMailComposeViewControllerDe
         self.present(composeVC, animated: true, completion: nil)
 
         
-        let vc = showLeaderboardViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+        //let vc = showLeaderboardViewController()
+        //self.navigationController?.pushViewController(vc, animated: true)
     }
     
     /*
@@ -115,11 +115,16 @@ class CommServiceViewController: UIViewController, MFMailComposeViewControllerDe
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+    self.navigationController?.setNavigationBarHidden(false, animated: true)
         if !MFMailComposeViewController.canSendMail() {
             print("Mail services are not available")
             return
         }
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+    self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     func mailComposeController(_ controller: MFMailComposeViewController,

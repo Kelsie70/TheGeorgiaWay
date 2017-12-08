@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Cqy-ay-O14">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--The Georgia Way Blog-->
+        <scene sceneID="sdh-lk-P9H">
+            <objects>
+                <viewController storyboardIdentifier="WebBlogViewController" title="The Georgia Way Blog" id="Cqy-ay-O14" customClass="WebBlogViewController" customModule="TheGeorgiaWay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A3n-rv-14J"/>
+                        <viewControllerLayoutGuide type="bottom" id="QZl-YF-hRc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b7E-1R-YRK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Mc-YR-I5T">
+                                <rect key="frame" x="0.0" y="-770" width="375" height="1437"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Mc-YR-I5T" firstAttribute="leading" secondItem="b7E-1R-YRK" secondAttribute="leading" id="OnU-lV-DwR"/>
+                            <constraint firstAttribute="trailing" secondItem="6Mc-YR-I5T" secondAttribute="trailing" id="X9f-Pb-lG0"/>
+                            <constraint firstItem="QZl-YF-hRc" firstAttribute="top" secondItem="6Mc-YR-I5T" secondAttribute="bottom" id="f1v-MD-FYM"/>
+                            <constraint firstItem="6Mc-YR-I5T" firstAttribute="top" secondItem="b7E-1R-YRK" secondAttribute="top" constant="-770" id="h67-Gz-e4M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blogWeb" destination="6Mc-YR-I5T" id="ZUs-fU-9wD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wNc-Nr-gpt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="80.50974512743629"/>
+        </scene>
+    </scenes>
+</document>
